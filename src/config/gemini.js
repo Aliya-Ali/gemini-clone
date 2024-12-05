@@ -7,7 +7,7 @@ import { GoogleGenerativeAI,
 
 
  async function runChat(prompt) {
-    const genAI = new GoogleGenerativeAI("AIzaSyBUStyk2brouRibbCpnQQZgtXxPi1bbZrQ");
+    const genAI = new GoogleGenerativeAI("gemini_api_key");
     const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
     const generationConfig = {
         temperature: 0.9,
